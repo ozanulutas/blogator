@@ -1,13 +1,15 @@
 <template>
-  <Blogator/>
+  <Nav/>
+  <h1 class="text-center my-4">BLOGATÖR</h1>
+  <router-view></router-view>
 </template>
 
 <script>
-import Blogator from "./components/Blogator";
+import Nav from "./components/Nav";
 
 export default {
   components: {
-    Blogator
+    Nav
   }
 }
 </script>
