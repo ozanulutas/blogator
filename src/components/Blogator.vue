@@ -75,7 +75,11 @@ export default {
           p: "my-3",
           h1: "my-4", h2: "my-4", h3: "my-4", h4: "my-4", h5: "my-4", h6: "my-4",
           a: "link"
-        }
+        },
+        salonrandevu: {
+        },
+        ilksms: {
+        },
       }
     };
   },
@@ -95,6 +99,8 @@ export default {
 
       div.querySelectorAll(elements).forEach((element) => {
         tagName = element.tagName.toLowerCase();
+        console.log(tagName);
+        console.log(this.selectedWebsite);
 
         if(! Object.prototype.hasOwnProperty.call(this.styles[this.selectedWebsite], tagName)) {
           return;
@@ -110,7 +116,3 @@ export default {
   },
 };
 </script>
-
-
-<style>
-</style>
